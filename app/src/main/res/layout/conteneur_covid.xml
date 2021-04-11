@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+app:cardCornerRadius="3dp"
+app:cardElevation="3dp"
+app:cardUseCompatPadding="true"
+android:layout_marginTop="6dp"
+android:layout_marginStart="6dp"
+android:layout_marginEnd="6dp"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date"
+        />
+    <TextView
+        android:id="@+id/zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zone"
+        android:layout_below="@+id/date"
+        />
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="category"
+        android:layout_below="@+id/zone"/>
+    <TextView
+        android:id="@+id/subzone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="subzone"
+        android:layout_below="@+id/location"/>
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="count"
+        android:layout_below="@+id/category"/>
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="location"
+        android:layout_below="@+id/count"/>
+
+</RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <Button
+        android:id="@+id/pickTimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:text="Pick date (optional)"
+        android:textColor="@color/white"
+        app:backgroundTint="@android:color/holo_blue_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <TextView
+        android:id="@+id/CasTotalCovid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total covid cases"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <Spinner
+        android:id="@+id/spinner_zone"
+        android:layout_width="256dp"
+        android:layout_height="41dp"
+        android:background="@android:color/holo_blue_light"
+        android:entries="@array/list_pays"
+        android:paddingRight="10dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998" />
+
+    <TextView
+        android:id="@+id/Zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zone"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_zone"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_zone"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/spinner_zone"
+        app:layout_constraintTop_toBottomOf="@+id/CasTotalCovid"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <Spinner
+        android:id="@+id/spinner_cat"
+        android:layout_width="256dp"
+        android:layout_height="41dp"
+        android:background="@android:color/holo_blue_light"
+        android:entries="@array/list_cat"
+        android:paddingRight="10dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <TextView
+        android:id="@+id/Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_cat"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_cat"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="@+id/spinner_cat"
+        app:layout_constraintTop_toBottomOf="@+id/CasTotalCovid"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <Button
+        android:id="@+id/btn_valider"
+        android:layout_width="112dp"
+        android:layout_height="54dp"
+        android:text="Search"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@android:color/holo_blue_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empty"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/pickTimeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <TextView
+        android:id="@+id/internet_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FFC107"
+        android:drawableLeft="@drawable/ic_baseline_warning_24"
+        android:drawablePadding="5dp"
+        android:text="No internet"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
