@@ -5,3 +5,5 @@ Ce projet a été réalisé par Amine ABOUSALHAM pendant le mois de mars 2021 po
 
 Voici le lien open datasoft d'où sont tirées les données:
 https://public.opendatasoft.com/explore/dataset/covid-19-pandemic-worldwide-data/api/?disjunctive.zone&disjunctive.category&refine.category=Confirmed&refine.zone=France&sort=date
+
+L'apk debug de l'appli est disponible dans app/build/outputs.
